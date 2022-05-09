@@ -28,7 +28,7 @@ body {
     max-width: 1922px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right,#fff 282px,#FFEE2F 282px);   /* ,#fff */
+    background: linear-gradient(to right,#fff 852px,#FFEE2F 852px);
 }
 
 /* ! Header */
@@ -161,7 +161,6 @@ footer p {
 @media (max-width:1026px) {
     .wrapper {
         max-width: 1026px;
-        background: linear-gradient(to right,#fff 97px,#FFEA2F 97px);  /* ,rgb(255, 255, 255) */
     }
     .summon-menu {
         display: block;
@@ -185,7 +184,6 @@ footer p {
 @media (max-width:600px) {
     .wrapper {
         max-width: 600px;
-        background: linear-gradient(to right,#F1FAFF, 70px,#FFEA2F 70px);
     }
     header {
         height: 98px;
@@ -216,162 +214,201 @@ footer p {
 
 main {
     display: flex;
+}
+
+aside {
+    height: 900px;  /* ! высота бара */
+    width: 125px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lot-icons {
+    position: fixed;
+}
+
+.lot-icons li {
+    margin-bottom: 18px;
+}
+
+/* !Контен */
+
+.about-company {    /* !Общий Контэнер */
+    display: flex;
+    flex-direction: column;
+}
+
+.about-company__more {
+    max-width: 1797px;
+    height: 822px;
+    display: flex;
+}
+
+.about-company__text {
+    max-width: 620px;
+    min-width: 400px;  /* !! минимальная ширица текста */
+    height: 520px;
+    margin: 161px 0px 0px 60px;
+}
+
+.about-company__text h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    color: #000000;
+}
+
+.about-company__text p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 73px;
+}
+
+.about-company__progress {
+    width: 1115px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-container {
+    width: 545px;
+    height: 560px;
+    margin: 150px 0px 0px 182px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.card-container__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    height: 260px;
+    width: 200px;
+}
+
+.card__cont-img {
+    height: 137px;
+    width: 137px;
+    background: #E8D935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 100px;
-    margin-left: 88px;
+.card__cont-img::before {
+    height: 137px;
+    width: 137px;
+    content: "";
+    background: #F2E33A;
+    position: absolute;
+    bottom: 25px;
+    left: 23px;
+    z-index: -1;
 }
 
-.welcome-title {  /* h1 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.card__img {
+    position: relative;
+}
+
+.card h4{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.card p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #646464;
+}
+
+.about-company__our-team {
+    margin: 400px 0px 0px 60px;
+    max-width: 1737px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-team__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0px 274px 28px 0px;
+}
+
+.our-team__title h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
     line-height: 85px;
     text-transform: uppercase;
     color: #000000;
-    width: 1000px;
-    margin: 0px 0px 40px 0px;
-    position: relative;
-    z-index: 1;
+    width: 350px;
 }
 
-.more-block {
-    width: 1000px;
-    margin: 40px 0px 0px 0px;
+.button-arrow {
+    width: 220px;
+    height: 67px;
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 
-.lot-icons {
-    margin: 0px 95px 0px 0px;
+.btn {
+    width: 67px;
+    height: 67px;
+    background: #F1F1F1;
 }
 
-.lot-icons li{
-    margin-bottom: 18px;
+
+.our-team__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 151px;
 }
 
-.mb-rb {
-    margin: 29px 65px 0px 0px;
-    position: relative;
-    z-index: 1;
+.team__card-container {
+    width: 342px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
 }
 
-.more-block h4 {
-    width: 500px;
+.team__card-container h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.team__card-container h6 {
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 25px;
     color: #000000;
-    margin: 44px 0px 0px 0px;
-    position: relative;
-    z-index: 1;
+    margin-top: 8px;
 }
 
-.unicorn {
-    width: 786px;
-    height: 733px;
-    position: relative;
-    margin-right: 40px;
-    margin-bottom: 40px;
-}
-
-.img-unicorn {
-    background-image: url(../images/main/Unicorn.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-@media (max-width:1026px) {
-    main {
-        flex-direction: column;
-    }
-    .welcome {
-        margin-top: 64px;
-        margin-left: 47px;
-        justify-content: flex-start;
-    }
-    .welcome-title {
-        width: 750px;
-        margin: 0px 0px 25px 0px;
-    }
-    .more-block {
-        margin: 0px 0px 0px 0px;
-    }
-    .lot-icons {
-        margin: 0px 0px 0px 0px;
-        position: absolute;
-        top: 190px;
-        z-index: 1;
-    }
-    .mb-rb {
-        margin: 0px 65px 0px 0px;
-    }
-    .more-block h4 {
-        margin: 15px 0px 0px 0px;
-    }
-    .unicorn {
-        align-self: flex-end;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-
-@media (max-width:600px) {
-    main {
-        /* height: 875px; */
-        flex-direction: column;
-    }
-    .welcome {
-        height: 826px;
-        margin-top: 49px;
-        margin-left: 14px;
-        justify-content: space-between;
-    }
-    .welcome-title {
-        font-size: 32px;
-        line-height: 38px;
-        width: 300px;
-        margin: 0px;
-    }
-    .more-block {
-        flex-direction: column;
-        width: 345px;
-        margin-bottom: 39px;
-    }
-    .lot-icons {
-        display: none;
-    }
-    .mb-rb {
-        width: 120px;
-        height: 120px;
-        margin: 0px;
-    }
-    .more-block h4 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 345px;
-        margin: 25px 0px 0px 0px;
-    }
-    .unicorn{
-        width: 345px;
-        height: 322px;
-        margin: 0px;
-        position: absolute;
-        top: 240px;
-        right: 15px;
-    }
-    .img-unicorn {
-        background-image: url(../images/main/Unicorn-m.png);
-    }
+.team__card-container p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-top: 25px;
 }
