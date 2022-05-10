@@ -25,6 +25,7 @@ body {
 }
 
 .wrapper {
+    min-width: 360px;
     max-width: 1922px;
     display: flex;
     flex-direction: column;
@@ -219,7 +220,7 @@ footer p {
 
 .lot-icons {
     position: fixed;
-    top: 430px;
+    top: 370px;
 }
 
 .lot-icons li {
@@ -416,7 +417,8 @@ footer p {
     }
     .about-company__more {
         flex-direction: column;
-        padding-left: 140px;
+        align-items: center;
+        padding-left: 0px;
     }
     .about-company__text {
         margin: 95px 0px 0px 0px;
