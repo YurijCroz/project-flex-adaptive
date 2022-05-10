@@ -1,0 +1,307 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    
+}
+
+.wrapper {
+    min-width: 360px;
+    max-width: 1922px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(to right,#fff 852px,#D3D1E9 852px);
+}
+
+/* ! Header */
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.summon-menu {
+    margin: 0px 30px;
+    display: none;
+}
+
+.hearts {
+    margin-left: 88px;
+    margin-right: auto;
+}
+
+@media (max-width:530px) {
+    .hearts {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    header {
+        justify-content: space-between;
+    }
+}
+
+.inner-menu li {
+    display: inline;
+    margin-right: 85px;
+    list-style-type: none;
+}
+
+@media (max-width:1310px) {
+    .inner-menu li {
+        margin-right: 30px;
+    }
+}
+
+.inner-menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    color: #000000;
+}
+.inner-menu a:active, a:hover {
+    color: #FF0000;
+}
+
+.red-block {
+    height: 120px;
+    width: 120px;
+    background-color: #CE0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-block:hover {
+    background-color: #FE0002;
+}
+.red-block:active {
+    background: #A60002;
+}
+
+.red-block a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* ! Footer */
+
+.backgrn-line {
+    height: 77px;
+    background: #FFFFFF;
+}
+
+footer {
+    height: 54px;
+    background-color: #efefef;
+    padding: 0px 16px 0px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7E7E;
+}
+
+.footer__inner-menu li {
+    display: inline;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+
+.footer__inner-menu li:last-child {
+    margin-right: 0px;
+}
+
+.footer__inner-menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7E7E;
+}
+
+.footer__lot-icons li {
+    display: inline;
+}
+
+/* !! Adaptive Header & footer */
+@media (max-width:1026px) {
+    .wrapper {
+        max-width: 1026px;
+        background: linear-gradient(to right,#fff 97px,#D3D1E9 97px);
+    }
+    .summon-menu {
+        display: block;
+    }
+    .inner-menu li {
+        display: none;
+    }
+    .footer__inner-menu li {
+        margin-right: 10px;
+    }
+    .footer__inner-menu a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .backgrn-line {
+        height: 51px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .wrapper {
+        max-width: 600px;
+        background: linear-gradient(to right,#F1FAFF 70px,#D3D1E9 70px);
+    }
+    header {
+        height: 98px;
+    }
+    .summon-menu {
+        margin: 0px 15px;
+    }
+    .red-block {
+        height: 98px;
+        width: 98px;
+    }
+    footer {
+        padding: 0px 16px 0px 20px;
+    }
+    .footer__inner-menu li {
+        display: none;
+    }
+    .backgrn-line {
+        height: 49px;
+        background: #F1FAFF;
+    }
+}
+
+
+/* !!!!!!!! */
+
+/* !! MAIN */
+
+
+
+.lot-icons {
+    position: fixed;
+    top: 341px;
+    left: 10px;
+}
+
+@media (max-width:1216px) {
+    .lot-icons {display: none;}
+}
+
+.lot-icons li {
+    margin-bottom: 18px;
+}
+
+/* !Контен */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.games-title__welcome {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-around;
+    height: 900px;                  /* !! высота */
+}
+
+.games-title__text {
+    width: 700px;
+    height: 550px;
+    margin: 166px 0px 0px 10px;
+    padding: 0px 100px 0px 20px;
+}
+
+.style-text h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #000000;
+    width: 400px;
+}
+
+.style-text p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin: 30px 0px;
+}
+
+.button-games-first {
+    width: 192px;
+    height: 94px;
+}
+
+.ninja-pixel {
+    padding: 112px 0px 0px 10px;
+}
+
+.game-list__projects {
+    display: flex;
+    flex-direction: column;
+    background: #FAFAFA;
+    padding: 100px 20px 0px 20px;
+}
+
+.game-list__section {
+    margin: 143px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-list__description {
+    width: 609px;
+    height: 483px;
+    margin: 106px 0px 0px 10px;
+    padding: 0px 0px 0px 20px;
+}
+
+.game-list__image {
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 20px;
+}
