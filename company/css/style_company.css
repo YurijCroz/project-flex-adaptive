@@ -28,7 +28,7 @@ body {
     max-width: 1922px;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
+    overflow: hidden;
     background: linear-gradient(to right,#fff 852px,#FFEE2F 852px);
 }
 
@@ -186,6 +186,7 @@ footer p {
 @media (max-width:600px) {
     .wrapper {
         max-width: 600px;
+        background: linear-gradient(to right,#F1FAFF 70px,#FFEE2F 70px);
     }
     header {
         height: 98px;
@@ -307,10 +308,6 @@ footer p {
     z-index: -1;
 }
 
-.card__img {
-    position: relative;
-}
-
 .card h4{
     font-style: normal;
     font-weight: 900;
@@ -329,7 +326,6 @@ footer p {
 
 .about-company__our-team {
     margin: 300px 0px 100px 95px;
-    /* max-width: 1737px; */
     display: flex;
     flex-direction: column;
 }
@@ -369,7 +365,6 @@ footer p {
 .btn-right {
     background: #CE0002;
 }
-
 
 .our-team__cards {
     display: flex;
@@ -454,5 +449,83 @@ footer p {
 
 
 @media (max-width:600px) {
-    
+    .about-company {
+        padding-left: 15px;
+    }
+    .about-company__more {
+        padding-left: 0px;
+        align-items: center;
+    }
+    .about-company__text {
+        max-width: 340px;
+        min-width: 340px;
+        height: 345px;
+        margin: 78px 0px 0px 0px;
+    }
+    .about-company__text h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .about-company__text p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+    .card-container {
+        width: 340px;
+        height: 400px;
+        margin: 67px 0px 0px 0px;
+    }.card {
+        height: 200px;
+        width: 140px;
+    }
+    .card__cont-img {
+        height: 85.6px;
+        width: 85.6px;
+    }
+    .card__cont-img::before {
+        height: 85.6px;
+        width: 85.6px;
+        bottom: 15.6px;
+        left: 14.4px;
+    }
+    .card h4{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .card p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .card__img img {
+        width: 44px;
+        height: 44px;
+    }
+    .about-company__our-team {
+        margin: 0px 0px 0px 0px;
+        padding-top: 134px;
+        background: #F1FAFF;
+        max-width: 985px;
+        align-items: center;
+    }
+    .our-team__title {
+        margin: 0px 0px 34px 0px;
+        width: 342px;
+    }
+    .our-team__title h1 {
+        font-size: 32px;
+        line-height: 38px;
+        width: 240px;
+    }
+    .button-arrow {
+        display: none;
+    }
+    .our-team__cards {
+        padding-right: 5px;
+        flex-direction: column;
+    }
+    .team__card-container p {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
