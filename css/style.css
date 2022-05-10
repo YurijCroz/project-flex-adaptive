@@ -161,7 +161,7 @@ footer p {
 @media (max-width:1026px) {
     .wrapper {
         max-width: 1026px;
-        background: linear-gradient(to right,#fff 97px,#FFEA2F 97px);  /* ,rgb(255, 255, 255) */
+        background: linear-gradient(to right,#fff 97px,#FFEE2F 97px);
     }
     .summon-menu {
         display: block;

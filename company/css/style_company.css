@@ -28,6 +28,7 @@ body {
     max-width: 1922px;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
     background: linear-gradient(to right,#fff 852px,#FFEE2F 852px);
 }
 
@@ -161,6 +162,7 @@ footer p {
 @media (max-width:1026px) {
     .wrapper {
         max-width: 1026px;
+        background: linear-gradient(to right,#fff 97px,#FFEE2F 97px);
     }
     .summon-menu {
         display: block;
@@ -212,20 +214,11 @@ footer p {
 
 /* !! MAIN */
 
-main {
-    display: flex;
-}
 
-aside {
-    height: 900px;  /* ! высота бара */
-    width: 125px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
 .lot-icons {
     position: fixed;
+    top: 430px;
 }
 
 .lot-icons li {
@@ -234,22 +227,22 @@ aside {
 
 /* !Контен */
 
-.about-company {    /* !Общий Контэнер */
+.about-company {    /* !Общий Контэйнер */
     display: flex;
     flex-direction: column;
+    padding-left: 90px;
 }
 
 .about-company__more {
-    max-width: 1797px;
-    height: 822px;
+    min-height: 822px;
     display: flex;
 }
 
 .about-company__text {
     max-width: 620px;
-    min-width: 400px;  /* !! минимальная ширица текста */
+    min-width: 400px;  /* !! минимальная ширина текста */
     height: 520px;
-    margin: 161px 0px 0px 60px;
+    margin: 161px 0px 0px 95px;
 }
 
 .about-company__text h1 {
@@ -270,7 +263,6 @@ aside {
 }
 
 .about-company__progress {
-    width: 1115px;
     position: relative;
     z-index: 1;
 }
@@ -336,8 +328,8 @@ aside {
 }
 
 .about-company__our-team {
-    margin: 400px 0px 0px 60px;
-    max-width: 1737px;
+    margin: 300px 0px 100px 95px;
+    /* max-width: 1737px; */
     display: flex;
     flex-direction: column;
 }
@@ -345,7 +337,7 @@ aside {
 .our-team__title {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin: 0px 274px 28px 0px;
 }
 
@@ -369,7 +361,13 @@ aside {
 .btn {
     width: 67px;
     height: 67px;
+}
+
+.btn-left {
     background: #F1F1F1;
+}
+.btn-right {
+    background: #CE0002;
 }
 
 
@@ -411,4 +409,50 @@ aside {
     line-height: 25px;
     color: #000000;
     margin-top: 25px;
+}
+
+
+@media (max-width:1026px) {
+    .lot-icons {
+        display: none;
+    }
+    .about-company{
+        padding-left: 41px;
+    }
+    .about-company__more {
+        flex-direction: column;
+        padding-left: 140px;
+    }
+    .about-company__text {
+        margin: 95px 0px 0px 0px;
+    }
+    .about-company__progress {
+        max-width: 1000px;
+    }
+    .card-container {
+        margin: 114px 0px 0px 0px;
+    }
+    .about-company__our-team {
+        margin: 140px 0px 0px 0px;
+        padding-top: 200px;
+        background: #FFFFFF;
+        max-width: 985px;
+    }
+    .our-team__title {
+        justify-content: space-between;
+        margin: 0px 0px 28px 0px;
+    }
+    .button-arrow {
+        margin-right: 47px;
+    }
+    .our-team__cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 47px;
+    }
+}
+
+
+@media (max-width:600px) {
+    
 }
