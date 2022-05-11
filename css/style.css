@@ -27,14 +27,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 @font-face {
     font-family: Akrobat;
     font-display: swap;
-    src: url("../fonts/Akrobat-ExtraBold.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Akrobat;
-    font-display: swap;
     src: url("../fonts/Akrobat-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
@@ -62,9 +54,9 @@ body {
 
 .wrapper {
     max-width: 1922px;
+    background: linear-gradient(to right,#fff 282px,#FFEE2F 282px);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right,#fff 282px,#FFEE2F 282px);   /* ,#fff */
 }
 
 /* ! Header */
@@ -152,7 +144,7 @@ header {
     background: #FFFFFF;
 }
 
-footer {
+.footer {
     height: 54px;
     background-color: #efefef;
     padding: 0px 16px 0px 27px;
@@ -161,7 +153,7 @@ footer {
     align-items: center;
 }
 
-footer p {
+.footer p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -233,7 +225,7 @@ footer p {
         height: 98px;
         width: 98px;
     }
-    footer {
+    .footer {
         padding: 0px 16px 0px 20px;
     }
     .footer__inner-menu li {
@@ -251,35 +243,35 @@ footer p {
 /* !! MAIN */
 
 main {
+    height: 911px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    padding: 49px 0px 0px 88px;
 }
 
 .welcome {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    max-width: 100px;
-    margin-left: 88px;
+    width: 55%;
 }
 
 .welcome-title {  /* h1 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
     line-height: 85px;
     text-transform: uppercase;
     color: #000000;
-    width: 1000px;
+    width: 1100px;
     margin: 0px 0px 40px 0px;
     position: relative;
     z-index: 1;
 }
 
 .more-block {
-    width: 1000px;
+    width: 1100px;
     margin: 40px 0px 0px 0px;
     display: flex;
     position: relative;
@@ -300,7 +292,7 @@ main {
 }
 
 .more-block h4 {
-    width: 500px;
+    width: 459px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -312,32 +304,52 @@ main {
 }
 
 .unicorn {
-    width: 786px;
-    height: 733px;
+    width: 45%;
+    height: auto;
     position: relative;
-    margin-right: 40px;
     margin-bottom: 40px;
+    margin-top: auto;
+    margin-right: 40px;
 }
 
 .img-unicorn {
-    background-image: url(../images/main/Unicorn.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:1670px) {
+    .welcome {
+        justify-content: flex-start;
+        width: 45%;
+    }
+    .welcome-title {
+        margin: 0px;
+    }
+    .more-block {
+        margin: 20px 0px 0px 0px;
+    }
+    .unicorn {
+        width: 55%;
+    }
 }
 
 
 @media (max-width:1026px) {
     main {
+        height: auto;
         flex-direction: column;
+        padding: 0px;
     }
     .welcome {
         margin-top: 64px;
         margin-left: 47px;
         justify-content: flex-start;
+        width: 84.5%;
+        height: auto;
     }
     .welcome-title {
-        width: 750px;
+        width: auto;
+        max-height: 425px;
         margin: 0px 0px 25px 0px;
     }
     .more-block {
@@ -359,6 +371,8 @@ main {
         align-self: flex-end;
         margin-right: 10px;
         margin-bottom: 10px;
+        margin-top: 0px;
+        width: 76%;
     }
 }
 
@@ -377,7 +391,7 @@ main {
     .welcome-title {
         font-size: 32px;
         line-height: 38px;
-        width: 300px;
+        width: 352px;
         margin: 0px;
     }
     .more-block {
@@ -406,8 +420,12 @@ main {
         position: absolute;
         top: 240px;
         right: 15px;
+        background-image: url(../images/main/Unicorn-m.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .img-unicorn {
-        background-image: url(../images/main/Unicorn-m.png);
+        display: none;
     }
 }
