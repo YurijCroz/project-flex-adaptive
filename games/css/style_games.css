@@ -283,10 +283,10 @@ main {
 }
 
 .games-title__text {
-    width: 700px;
-    height: 550px;
+    width: 610px;
+    height: fit-content;
     margin: 166px 0px 0px 10px;
-    padding: 0px 100px 0px 20px;
+    padding: 0px 10px 0px 20px;
 }
 
 .style-text h1 {
@@ -320,24 +320,177 @@ main {
 .game-list__projects {
     display: flex;
     flex-direction: column;
-    background: #FAFAFA;
+    background: #ffffff;
     padding: 100px 20px 0px 20px;
 }
 
 .game-list__section {
+    width: 100%;
+    height: auto;
     margin: 143px 0px 0px 0px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .game-list__description {
     width: 609px;
-    height: 483px;
-    margin: 106px 0px 0px 10px;
+    height: fit-content;
+    margin: 0px 0px 0px 10px;
     padding: 0px 0px 0px 20px;
 }
 
 .game-list__image {
+    height: auto;
     margin: 0px 0px 0px 10px;
     padding: 0px 0px 0px 20px;
+}
+
+.game-list__image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:1216px) {
+    .game-list__projects {
+        padding: 100px 10px 0px 10px;
+    }
+    .game-list__image {
+        width: 57.15%;
+    }
+}
+
+
+
+@media (max-width:1026px) {
+    .games-title__welcome {
+        height: 1349px;
+        position: relative;
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .games-title__text {
+        margin: 128px 0px 0px 15.3%;
+    }
+    .position-button-main-page {
+        position: absolute;
+        left: 69.4%;
+        bottom: 376px;
+    }
+    .ninja-pixel {
+        padding: 105px 0px 0px 15.3%;
+    }
+    .game-list__projects {
+        padding: 12px 10px 0px 10px;
+    }
+    .game-list__section {
+        margin: 107px 0px 0px 0px;
+    }
+    .game-list__description {
+        width: 50%;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 0px 0px 10px;
+    }
+    .game-list__image {
+        width: 50%;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+@media (max-width:850px) {
+    .games-title__text {
+        margin: 128px 0px 0px 5.88%;
+    }
+    .position-button-main-page {
+        right: 2%;
+        left: auto;
+    }
+    .ninja-pixel {
+        padding: 105px 0px 0px 5.88%;
+    }
+    .game-list__section{
+        flex-direction: column;
+        margin: 80px 0px 0px 0px;
+    }
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+    .game-list__description {
+        width: 95%;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 0px 0px 10px;
+    }
+    .game-list__image {
+        width: 95%;
+        margin: 20px 0px 0px 5px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+@media (max-width:720px) {
+    .games-title__welcome {
+        height: 1500px;
+    }
+    .games-title__text {
+        padding: 0px;
+        margin: 128px 0px 0px 3.88%;
+    }
+    .ninja-pixel {
+        padding: 105px 0px 0px 3.88%;
+    }
+    .position-button-main-page {
+        right: auto;
+        left: 25%;
+        bottom: 50px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .style-text h1 {
+        font-size: 32px;
+        line-height: 38px;}
+    .style-text p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .games-title__welcome {
+        height: 875px;           /* !! высота */
+        padding: 0px 15px 0px 15px;
+    }
+    .games-title__text {
+        width: 95%;
+        margin: 78px 0px 0px 0px;
+    }
+    .ninja-pixel {
+        padding: 0px;
+        margin: 13px 14.133% 0px auto;
+        background-image: url(../images/x3-m.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 208px;
+        height: 329px;
+    }
+    .ninja-pixel img {
+        display: none;
+    }
+    .game-list__projects {
+        background: #F1FAFF;
+    }
+    .position-button-main-page {
+        right: auto;
+        left: 25%;
+        bottom: 17px;
+    }    .game-list__description {
+        width: 95%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .game-list__image {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
 }
