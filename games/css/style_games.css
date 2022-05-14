@@ -76,16 +76,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 .summon-menu {
     margin: 0px 30px;
     display: none;
+    position: relative;
+    z-index: 6;
 }
 
 .hearts {
     margin-left: 88px;
     margin-right: auto;
+    position: relative;
+    z-index: 6;
 }
 
 @media (max-width:530px) {
@@ -130,6 +135,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 6;
 }
 .red-block:hover {
     background-color: #FE0002;
@@ -204,8 +211,39 @@ footer p {
     .summon-menu {
         display: block;
     }
+    .summon-menu:hover ~ .menu{
+        transform: translate(0, 0);
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        height: 100vh;
+        width: 100vw;
+        background: #FFFFFF;
+        opacity: 0.9;
+        padding: 330px 0px 0px 9%;
+        transform: translate(-100%, -100%);
+        transition: 0.5s;
+    }
     .inner-menu li {
-        display: none;
+        display: block;
+        position: relative;
+        z-index: 6;
+        margin-top: 50px;
+    }
+    .inner-menu li:first-child {
+        margin-top: 0px;
+    }
+    .inner-menu a {
+        font-family: ZonaPro;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #000000;
     }
     .footer__inner-menu li {
         margin-right: 10px;
@@ -230,6 +268,12 @@ footer p {
     }
     .summon-menu {
         margin: 0px 15px;
+    }
+    .menu {
+        padding: 152px 0px 0px 10.6%;
+    }
+    .inner-menu a {
+        font-size: 32px;
     }
     .red-block {
         height: 98px;
@@ -279,7 +323,7 @@ main {
     display: flex;
     padding: 0px 20px 48px 20px;
     justify-content: space-around;
-    height: auto;                  /* !! высота */
+    height: auto;
 }
 
 .games-title__text {
@@ -311,6 +355,8 @@ main {
 .button-games-first {
     width: 192px;
     height: 94px;
+    position: relative;
+    z-index: 1;
 }
 
 .ninja-pixel {
@@ -490,7 +536,7 @@ main {
         bottom: 17px;
     }
     .game-list__section{
-        margin: 80px 0px 124px 0px;
+        margin: 60px 0px 124px 0px;
     }
     .game-list__description {
         width: 95%;
